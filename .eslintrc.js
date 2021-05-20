@@ -31,6 +31,7 @@ module.exports = {
         extensions: ['.jsx', '.js']
       }
     ],
+
     'import/prefer-default-export': 'off',
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'react/jsx-one-expression-per-line': 'off',

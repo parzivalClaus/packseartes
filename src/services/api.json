@@ -1,0 +1,18 @@
+{
+  "packs": [
+    {
+      "name": "Shingeki no Kyojin",
+      "artAmount": 15,
+      "mockupAmount": 15,
+      "value": 15,
+      "valueEditable": 30,
+      "image": "http://packseartes.kaizenfotoprodutos.com.br/img/shingeki01.jpg"
+    },
+    {
+      "name": "Naruto 1.0",
+      "value": 13,
+      "valueEditable": 25,
+      "image": "http://packseartes.kaizenfotoprodutos.com.br/img/naruto.jpg"
+    }
+  ]
+}
