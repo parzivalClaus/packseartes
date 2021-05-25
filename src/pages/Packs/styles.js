@@ -28,11 +28,27 @@ export const ContentContainer = styled.div`
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+
+    p {
+      line-height: 20px;
+      font-size: 15px;
+      color: #a6171f;
+
+      strong {
+        color: #333;
+      }
+    }
   }
 
   img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
   }
 `;
 

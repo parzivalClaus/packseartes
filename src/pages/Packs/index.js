@@ -7,9 +7,20 @@ export default function Animes() {
   const [packs, setPacks] = useState(api.packs);
   const [category, setCategory] = useState('animes');
 
+  function sort(a, b) {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  }
+
   useEffect(() => {
     const data = api.packs.filter((pack) => pack.category === category);
-    setPacks(data);
+    const dataSorted = data.sort((a, b) => sort(a, b));
+    setPacks(dataSorted);
   }, [category]);
 
   return (
