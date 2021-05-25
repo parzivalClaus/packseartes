@@ -51,6 +51,11 @@ export const ContentContainer = styled.div`
       border-radius: 20px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+
       @media (max-width: 1024px) {
         margin-bottom: 20px;
       }
@@ -106,6 +111,10 @@ export const MenuContainer = styled.div`
       font-size: 18px;
       margin: 10px 0;
 
+      &:hover {
+        color: #fff !important;
+      }
+
       @media (max-width: 1024px) {
         margin: 8px 10px;
         padding: 2px 0px;
@@ -122,6 +131,11 @@ export const MenuContainer = styled.div`
     font-weight: bold;
     text-align: center;
     font-size: 15px;
+
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
 
     @media (max-width: 1024px) {
       padding: 10px;

@@ -9,4 +9,9 @@ export const Container = styled.div`
   height: 60px;
 
   opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 `;
