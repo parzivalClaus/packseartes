@@ -15,6 +15,7 @@ export default function Animes() {
         value: 'R$ 25,00',
         valueEditable: '-',
         image: camisetasNaruto,
+        url: 'https://www.facebook.com/groups/285138669211755/permalink/399584554433832/',
         category: 'animes',
       },
       {
@@ -24,6 +25,7 @@ export default function Animes() {
         value: 'R$ 25,00',
         valueEditable: '-',
         image: camisetasShingeki,
+        url: 'https://www.facebook.com/groups/285138669211755/permalink/398683694523918/',
         category: 'animes',
       },
       {
@@ -33,6 +35,7 @@ export default function Animes() {
         value: 'R$ 12,00',
         valueEditable: 'R$ 25,00',
         image: canecasFutebol,
+        url: 'https://www.facebook.com/groups/285138669211755/permalink/367459414313013/',
         category: 'futebol',
       },
     ],
@@ -137,7 +140,9 @@ export default function Animes() {
         <div className="packsContainer">
           {packs.map((pack) => (
             <div className="packBox" key={pack.name}>
-              <img src={pack.image} alt={pack.name} />
+              <a href={pack.url} alt={pack.name}>
+                <img src={pack.image} alt={pack.name} />
+              </a>
 
               <h1>{pack.name}</h1>
               <p>
