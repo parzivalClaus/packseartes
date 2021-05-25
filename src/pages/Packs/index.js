@@ -137,7 +137,12 @@ export default function Animes() {
         <div className="packsContainer">
           {packs.map((pack) => (
             <div className="packBox" key={pack.name}>
-              <a href={pack.url} alt={pack.name}>
+              <a
+                href={pack.url}
+                alt={pack.name}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={pack.image} alt={pack.name} />
               </a>
 
