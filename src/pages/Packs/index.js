@@ -2,33 +2,44 @@ import React, { useState, useEffect } from 'react';
 import { Container, MenuContainer, ContentContainer } from './styles';
 
 import camisetasNaruto from '../../assets/camiseta-naruto.jpeg';
+import camisetasShingeki from '../../assets/camiseta-shingeki.jpeg';
+import canecasFutebol from '../../assets/canecas-futebol.jpeg';
 
 export default function Animes() {
   const packsData = {
     packs: [
       {
-        name: 'Shingeki no Kyojin',
-        artAmount: 15,
-        mockupAmount: 15,
-        value: 15,
-        valueEditable: 30,
+        name: 'Naruto - Camisetas',
+        artAmount: 50,
+        mockupAmount: 50,
+        value: 'R$ 25,00',
+        valueEditable: '-',
         image: camisetasNaruto,
         category: 'animes',
       },
       {
-        name: 'Naruto 1.0',
-        artAmount: 15,
-        mockupAmount: 15,
-        value: 13,
-        valueEditable: 25,
-        image: camisetasNaruto,
+        name: 'Shingeki no Kyojin - Camisetas',
+        artAmount: 41,
+        mockupAmount: 41,
+        value: 'R$ 25,00',
+        valueEditable: '-',
+        image: camisetasShingeki,
         category: 'animes',
+      },
+      {
+        name: 'Futebol - Camisetas',
+        artAmount: 12,
+        mockupAmount: 12,
+        value: 'R$ 12,00',
+        valueEditable: 'R$ 25,00',
+        image: canecasFutebol,
+        category: 'futebol',
       },
     ],
   };
 
   const [packs, setPacks] = useState(packsData.packs);
-  const [category, setCategory] = useState('animes');
+  const [category, setCategory] = useState('todos');
 
   function sort(a, b) {
     if (a.name < b.name) {
@@ -41,15 +52,28 @@ export default function Animes() {
   }
 
   useEffect(() => {
-    const data = packsData.packs.filter((pack) => pack.category === category);
-    const dataSorted = data.sort((a, b) => sort(a, b));
-    setPacks(dataSorted);
+    if (!(category === 'todos')) {
+      const data = packsData.packs.filter((pack) => pack.category === category);
+      const dataSorted = data.sort((a, b) => sort(a, b));
+      setPacks(dataSorted);
+    } else {
+      setPacks(packsData.packs);
+    }
   }, [category]);
 
   return (
     <Container>
       <MenuContainer activeCategory={category}>
         <ul>
+          <button
+            type="button"
+            onClick={() => setCategory('todos')}
+            style={
+              category === 'todos' ? { color: '#fff' } : { color: '#bababa' }
+            }
+          >
+            <li>TODOS</li>
+          </button>
           <button
             type="button"
             onClick={() => setCategory('animes')}
