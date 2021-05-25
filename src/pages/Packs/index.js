@@ -5,6 +5,8 @@ import camisetasNaruto from '../../assets/camiseta-naruto.jpeg';
 import camisetasShingeki from '../../assets/camiseta-shingeki.jpeg';
 import canecasFutebol from '../../assets/canecas-futebol.jpeg';
 
+import WhatsButton from '../../components/whatsButton';
+
 export default function Animes() {
   const packsData = {
     packs: [
@@ -164,6 +166,7 @@ export default function Animes() {
             </div>
           ))}
         </div>
+        <WhatsButton />
       </ContentContainer>
     </Container>
   );
