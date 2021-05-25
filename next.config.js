@@ -1,5 +1,5 @@
 module.exports = {
-  imagea: {
+  image: {
     domains: [
       'http://packseartes.kaizenfotoprodutos.com.br',
       'packseartes.kaizenfotoprodutos.com.br',
