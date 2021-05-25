@@ -1,8 +1,78 @@
 import styled from 'styled-components';
+import bg from '../../assets/bg.jpg';
 
 export const Container = styled.div`
+  background: url(${bg});
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+`;
+
+export const ContentContainer = styled.div`
+  flex: 1;
+
+  padding: 20px;
+
+  height: 100vh;
+  overflow: scroll;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+
+  div.packBox {
+    display: block;
+    height: max-content;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
   img {
     width: 300px;
     height: 300px;
+  }
+`;
+
+export const MenuContainer = styled.div`
+  background: rgb(0, 0, 0, 0.7);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      background: none;
+      border: 0;
+      color: #333;
+      font-weight: bold;
+      text-align: left;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  }
+
+  div.payment {
+    background: #ffc700;
+    border-radius: 20px;
+    padding: 0 28px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  p {
+    margin: 20px 0;
+
+    strong {
+      color: #a6171f;
+    }
   }
 `;
