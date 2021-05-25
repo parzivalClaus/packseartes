@@ -1,10 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { Container, MenuContainer, ContentContainer } from './styles';
 
-import api from '../../services/api.json';
+import camisetasNaruto from '../../assets/camiseta-naruto.jpeg';
 
 export default function Animes() {
-  const [packs, setPacks] = useState(api.packs);
+  const packsData = {
+    packs: [
+      {
+        name: 'Shingeki no Kyojin',
+        artAmount: 15,
+        mockupAmount: 15,
+        value: 15,
+        valueEditable: 30,
+        image: camisetasNaruto,
+        category: 'animes',
+      },
+      {
+        name: 'Naruto 1.0',
+        artAmount: 15,
+        mockupAmount: 15,
+        value: 13,
+        valueEditable: 25,
+        image: camisetasNaruto,
+        category: 'animes',
+      },
+    ],
+  };
+
+  const [packs, setPacks] = useState(packsData.packs);
   const [category, setCategory] = useState('animes');
 
   function sort(a, b) {
@@ -18,7 +41,7 @@ export default function Animes() {
   }
 
   useEffect(() => {
-    const data = api.packs.filter((pack) => pack.category === category);
+    const data = packsData.packs.filter((pack) => pack.category === category);
     const dataSorted = data.sort((a, b) => sort(a, b));
     setPacks(dataSorted);
   }, [category]);
@@ -89,7 +112,7 @@ export default function Animes() {
       <ContentContainer>
         <div className="packsContainer">
           {packs.map((pack) => (
-            <div className="packBox">
+            <div className="packBox" key={pack.name}>
               <img src={pack.image} alt={pack.name} />
 
               <h1>{pack.name}</h1>
