@@ -209,9 +209,6 @@ export default function Animes() {
     ],
   };
 
-  const [packs, setPacks] = useState(packsData.packs);
-  const [category, setCategory] = useState('todos');
-
   function sort(a, b) {
     if (a.name < b.name) {
       return -1;
@@ -222,13 +219,19 @@ export default function Animes() {
     return 0;
   }
 
+  const initialSortedPacks = packsData.packs.sort((a, b) => sort(a, b));
+
+  const [packs, setPacks] = useState(initialSortedPacks);
+  const [category, setCategory] = useState('todos');
+
   useEffect(() => {
     if (!(category === 'todos')) {
       const data = packsData.packs.filter((pack) => pack.category === category);
       const dataSorted = data.sort((a, b) => sort(a, b));
       setPacks(dataSorted);
     } else {
-      setPacks(packsData.packs);
+      const dataSorted = packsData.packs.sort((a, b) => sort(a, b));
+      setPacks(dataSorted);
     }
   }, [category]);
 
