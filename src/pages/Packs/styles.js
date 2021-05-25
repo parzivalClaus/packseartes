@@ -112,14 +112,14 @@ export const MenuContainer = styled.div`
       margin: 10px 0;
 
       &:hover {
-        color: #fff !important;
+        color: #ffffff !important;
       }
 
       @media (max-width: 1024px) {
         margin: 8px 10px;
         padding: 2px 0px;
         font-size: 16px;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #ffffff;
       }
     }
   }
