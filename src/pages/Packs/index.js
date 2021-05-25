@@ -126,10 +126,7 @@ export default function Animes() {
           </button>
         </ul>
         <div className="payment">
-          <p>
-            O PAGAMENTO É <br />
-            VIA PIX
-          </p>
+          <p>O PAGAMENTO É VIA PIX</p>
           <p>
             CPF <strong>39949445892</strong>
           </p>
