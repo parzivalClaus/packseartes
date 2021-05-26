@@ -347,6 +347,9 @@ export default function Animes() {
       </MenuContainer>
 
       <ContentContainer>
+        <div className="msgContainer">
+          <p>Mensagem aqui</p>
+        </div>
         <div className="packsContainer">
           {packs.map((pack) => (
             <div className="packBox" key={pack.name}>
