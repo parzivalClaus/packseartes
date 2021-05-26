@@ -341,14 +341,19 @@ export default function Animes() {
         <div className="payment">
           <p>O PAGAMENTO É VIA PIX</p>
           <p>
-            CPF <strong>39949445892</strong>
+            Celular: <strong>11964279420</strong>
+            <br />
+            (Claudio, Nubank)
           </p>
         </div>
       </MenuContainer>
 
       <ContentContainer>
         <div className="msgContainer">
-          <p>Mensagem aqui</p>
+          <p>
+            Todos os packs foram feitos no Photoshop, portanto os editáveis são
+            em formato .PSD para Photoshop!
+          </p>
         </div>
         <div className="packsContainer">
           {packs.map((pack) => (

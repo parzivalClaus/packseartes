@@ -33,6 +33,17 @@ export const ContentContainer = styled.div`
 
   padding: 25px;
 
+  div.msgContainer {
+    background: #ffc700;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+
+    font-weight: bold;
+    line-height: 20px;
+  }
+
   div.packsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -144,6 +155,7 @@ export const MenuContainer = styled.div`
 
   p {
     margin: 20px 0;
+    line-height: 25px;
 
     @media (max-width: 1024px) {
       margin: 5px;
