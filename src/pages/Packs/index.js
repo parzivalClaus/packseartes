@@ -47,6 +47,16 @@ export default function Animes() {
         category: 'musica',
       },
       {
+        name: 'Kimetsu no Yaiba - Demon Hunter - Canecas',
+        artAmount: 15,
+        mockupAmount: 15,
+        value: 'R$ 15,00',
+        valueEditable: 'R$ 25,00',
+        image: `${process.env.PUBLIC_URL}/canecasKimetsuNoYaiba.jpeg`,
+        url: 'https://www.facebook.com/groups/285138669211755/permalink/405724163819871/',
+        category: 'animes',
+      },
+      {
         name: 'Saint Seiya - Canecas',
         artAmount: 10,
         mockupAmount: 10,
