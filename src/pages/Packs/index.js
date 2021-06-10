@@ -1,4 +1,6 @@
+/* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
+import TextField from '@material-ui/core/TextField';
 import { Container, MenuContainer, ContentContainer } from './styles';
 
 import WhatsButton from '../../components/whatsButton';
@@ -233,6 +235,12 @@ export default function Animes() {
 
   const [packs, setPacks] = useState(initialSortedPacks);
   const [category, setCategory] = useState('todos');
+  const [search, setSearch] = useState('');
+
+  function handleSearch(data) {
+    setSearch(data.target.value);
+    setCategory('todos');
+  }
 
   useEffect(() => {
     if (!(category === 'todos')) {
@@ -240,9 +248,18 @@ export default function Animes() {
       const dataSorted = data.sort((a, b) => sort(a, b));
       setPacks(dataSorted);
     } else {
-      const dataSorted = packsData.packs.sort((a, b) => sort(a, b));
+      setSearch(search.toUpperCase());
+      const regExpression = search;
+      const data = packsData.packs.filter((pack) =>
+        pack.name.toUpperCase().match(regExpression)
+      );
+      const dataSorted = data.sort((a, b) => sort(a, b));
       setPacks(dataSorted);
     }
+  }, [category, search]);
+
+  useEffect(() => {
+    setSearch('');
   }, [category]);
 
   return (
@@ -365,6 +382,18 @@ export default function Animes() {
             em formato .PSD para Photoshop!
           </p>
         </div>
+
+        <TextField
+          id="filled-basic"
+          label="Qual pack você procura?"
+          variant="filled"
+          margin="normal"
+          value={search}
+          onChange={handleSearch}
+          fullWidth
+          color="secondary"
+        />
+
         <div className="packsContainer">
           {packs.map((pack) => (
             <div className="packBox" key={pack.name}>

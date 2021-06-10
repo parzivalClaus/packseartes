@@ -37,11 +37,15 @@ export const ContentContainer = styled.div`
     background: #ffc700;
     border-radius: 4px;
     padding: 10px;
-    margin-bottom: 20px;
     opacity: 0.7;
 
     font-weight: bold;
     line-height: 20px;
+  }
+
+  input {
+    background: #fff;
+    font-size: 13px;
   }
 
   div.packsContainer {
