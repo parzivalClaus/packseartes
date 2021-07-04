@@ -55,7 +55,7 @@ export default function Animes() {
         value: 'R$ 13,00',
         valueEditable: '-',
         image: `${process.env.PUBLIC_URL}/canecasJujutsuKaisen.jpeg`,
-        url: 'https://www.facebook.com/groups/285138669211755/posts/405724163819871/',
+        url: 'https://www.facebook.com/groups/285138669211755/posts/420331635692457',
         category: 'animes',
       },
       {
