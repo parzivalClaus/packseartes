@@ -49,6 +49,16 @@ export default function Animes() {
         category: 'musica',
       },
       {
+        name: 'Jujutsu Kaisen - Canecas',
+        artAmount: 12,
+        mockupAmount: 12,
+        value: 'R$ 13,00',
+        valueEditable: '-',
+        image: `${process.env.PUBLIC_URL}/canecasJujutsuKaisen.jpeg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/405724163819871/',
+        category: 'animes',
+      },
+      {
         name: 'Kimetsu no Yaiba - Demon Slayer - Canecas',
         artAmount: 15,
         mockupAmount: 15,
@@ -425,11 +435,11 @@ export default function Animes() {
               </p>
               <p>
                 {' '}
-                <strong>Valor JPGS:</strong> {pack.value}
+                <strong>Valor:</strong> {pack.value}
               </p>
+              <br />
               <p>
-                {' '}
-                <strong>Valor JPGS + Editáveis:</strong> {pack.valueEditable}
+                * Agora os editáveis irão junto pelo mesmo valor =)
               </p>
             </div>
           ))}
