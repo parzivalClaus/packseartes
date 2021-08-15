@@ -49,6 +49,16 @@ export default function Animes() {
         category: 'musica',
       },
       {
+        name: 'Boku no Hero - My Hero Academia - Canecas',
+        artAmount: 16,
+        mockupAmount: 16,
+        value: 'R$ 15,00',
+        valueEditable: 'R$ 30,00',
+        image: `${process.env.PUBLIC_URL}/boku_no_hero_canecas.jpeg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/443347003390920/',
+        category: 'animes',
+      },
+      {
         name: 'Jujutsu Kaisen - Canecas',
         artAmount: 12,
         mockupAmount: 12,
