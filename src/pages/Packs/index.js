@@ -49,6 +49,16 @@ export default function Animes() {
         category: 'musica',
       },
       {
+        name: 'Space Jam 2 (Looney Tunes) - Canecas',
+        artAmount: 13,
+        mockupAmount: 13,
+        value: 'R$ 13,00',
+        valueEditable: 'R$ 30,00',
+        image: `${process.env.PUBLIC_URL}/canecasSpaceJam.jpeg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/448116839580603/',
+        category: 'filmes/livros',
+      },
+      {
         name: 'Boku no Hero - My Hero Academia - Canecas',
         artAmount: 16,
         mockupAmount: 16,
