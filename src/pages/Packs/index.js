@@ -49,6 +49,16 @@ export default function Animes() {
         category: 'musica',
       },
       {
+        name: 'Patrulha Canina - Canecas',
+        artAmount: 9,
+        mockupAmount: 9,
+        value: 'R$ 10,00',
+        valueEditable: 'R$ 30,00',
+        image: `${process.env.PUBLIC_URL}/canecasPatrulhaCanina.jpeg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/448676666191287/',
+        category: ['filmes/livros', 'desenhos'],
+      },
+      {
         name: 'Space Jam 2 (Looney Tunes) - Canecas',
         artAmount: 13,
         mockupAmount: 13,
@@ -284,7 +294,7 @@ export default function Animes() {
 
   useEffect(() => {
     if (!(category === 'todos')) {
-      const data = packsData.packs.filter((pack) => pack.category === category);
+      const data = packsData.packs.filter((pack) => pack.category.includes(category));
       const dataSorted = data.sort((a, b) => sort(a, b));
       setPacks(dataSorted);
     } else {
@@ -358,6 +368,18 @@ export default function Animes() {
             }
           >
             <li>FILMES / LIVROS</li>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setCategory('desenhos')}
+            style={
+              category === 'desenhos'
+                ? { color: '#ffffff' }
+                : { color: '#bababa' }
+            }
+          >
+            <li>DESENHOS</li>
           </button>
 
           <button
