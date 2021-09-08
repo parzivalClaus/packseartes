@@ -59,7 +59,7 @@ export default function Animes() {
         category: ['filmes/livros', 'desenhos'],
       },
       {
-        name: 'Filmes Infantis c/ Foto - Canecas',
+        name: 'Filmes Infantis com Foto - Canecas',
         artAmount: 10,
         mockupAmount: 10,
         value: 'R$ 10,00',
