@@ -59,6 +59,16 @@ export default function Animes() {
         category: ['filmes/livros', 'desenhos'],
       },
       {
+        name: 'Filmes Infantis c/ Foto - Canecas',
+        artAmount: 10,
+        mockupAmount: 10,
+        value: 'R$ 10,00',
+        valueEditable: 'R$ 30,00',
+        image: `${process.env.PUBLIC_URL}/canecasFilmesInfantis.jpeg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/456724738719813/',
+        category: ['filmes/livros', 'desenhos'],
+      },
+      {
         name: 'Space Jam 2 (Looney Tunes) - Canecas',
         artAmount: 13,
         mockupAmount: 13,
