@@ -79,6 +79,16 @@ export default function Animes() {
         category: 'jogos',
       },
       {
+        name: 'Street Fighter - Canecas',
+        artAmount: 13,
+        mockupAmount: 13,
+        value: 'R$ 13,00',
+        valueEditable: 'R$ 30,00',
+        image: `${process.env.PUBLIC_URL}/canecasStreetFighter.jpeg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/458295211896099/',
+        category: 'jogos',
+      },
+      {
         name: 'Space Jam 2 (Looney Tunes) - Canecas',
         artAmount: 13,
         mockupAmount: 13,
