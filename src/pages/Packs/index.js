@@ -89,6 +89,17 @@ export default function Animes() {
         category: 'series',
       },
       {
+        name: 'Com Café / Sem Café - Canecas',
+        artAmount: '13 (ou muito mais)',
+        mockupAmount: '13 (ou muito mais)',
+        value: 'R$ 15,00',
+        valueEditable: 'R$ 30,00',
+        image: `${process.env.PUBLIC_URL}/canecasCoffee.jpeg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/472464073812546/',
+        category: ['series', 'desenhos', 'filmes', 'animes', 'jogos', 'filmes/livros'],
+        frase: 'Na compra desse pack você pode me solicitar 1 arte no mesmo estilo com um personagem da sua escolha, e ainda terá acesso às artes criadas para os outros clientes também!'
+      },
+      {
         name: 'La Casa de Papel - Camisetas',
         artAmount: 16,
         mockupAmount: 16,
@@ -531,7 +542,7 @@ export default function Animes() {
               </p>
               <br />
               <p>
-                * Agora os editáveis irão junto pelo mesmo valor =)
+                {pack.frase ? pack.frase : '* Agora os editáveis irão junto pelo mesmo valor =)'}
               </p>
             </div>
           ))}
