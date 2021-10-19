@@ -100,6 +100,16 @@ export default function Animes() {
         frase: 'Na compra desse pack você pode me solicitar 1 arte no mesmo estilo com um personagem da sua escolha, e ainda terá acesso às artes criadas para os outros clientes também!'
       },
       {
+        name: 'Old School Gamer - Super Nintendo',
+        artAmount: '20',
+        mockupAmount: '20',
+        value: 'R$ 10,00',
+        valueEditable: 'R$ 20,00',
+        image: `${process.env.PUBLIC_URL}/canecasOldGamer.gif`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/480256166366670/',
+        category: 'jogos',
+      },
+      {
         name: 'La Casa de Papel - Camisetas',
         artAmount: 16,
         mockupAmount: 16,
