@@ -89,6 +89,16 @@ export default function Animes() {
         category: 'series',
       },
       {
+        name: 'Supernatural - Canecas',
+        artAmount: 11,
+        mockupAmount: 11,
+        value: 'R$ 15,00',
+        valueEditable: 'R$ 30,00',
+        image: `${process.env.PUBLIC_URL}/canecasSupernatural.jpg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/487462072312746/',
+        category: 'series',
+      },
+      {
         name: 'Com Café / Sem Café - Canecas',
         artAmount: '13 (ou muito mais)',
         mockupAmount: '13 (ou muito mais)',
