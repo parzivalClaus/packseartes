@@ -170,6 +170,16 @@ export default function Animes() {
         category: 'filmes/livros',
       },
       {
+        name: 'Matrix 4 (Resurrections) - Canecas',
+        artAmount: 10,
+        mockupAmount: 10,
+        value: 'R$ 10,00',
+        valueEditable: 'R$ 20,00',
+        image: `${process.env.PUBLIC_URL}/matrixCanecas.jpg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/499822197743400/',
+        category: 'filmes/livros',
+      },
+      {
         name: 'Boku no Hero - My Hero Academia - Canecas',
         artAmount: 16,
         mockupAmount: 16,
