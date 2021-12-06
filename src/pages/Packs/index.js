@@ -330,6 +330,16 @@ export default function Animes() {
         category: 'animes',
       },
       {
+        name: 'Naruto Draw 1.0 - Canecas',
+        artAmount: 26,
+        mockupAmount: 26,
+        value: 'R$ 25,00',
+        valueEditable: 'R$ 35,00',
+        image: `${process.env.PUBLIC_URL}/canecasNarutoDraw.jpg`,
+        url: 'https://www.facebook.com/groups/285138669211755/posts/505963953795891/',
+        category: 'animes',
+      },
+      {
         name: 'Naruto 2.0 - Canecas',
         artAmount: 14,
         mockupAmount: 14,
